@@ -1,45 +1,93 @@
 import React from 'react';
-import styled from 'styled-components';
+import MotorImg from './assets/motorbike.png';
+import SpeakerImg from './assets/specking.jpg';
+import PerformImg from './assets/performing.jpg';
 
-const divOne = styled.div`
-  background-color: #000;
-  position: relative;
-  z-index: 1;
-`;
+const divStyleOne = {
+  backgroundColor: '#ffffff00',
+  position: 'static',
+  height: '100%',
+  width: 'auto',
+  backgroundSize: 'cover'
+};
 
-console.log(divOne);
-
-const divTwo = `
-  background-color: blue;
-  position: absolute;
-  z-index: auto;
-`;
 
 const Home = () => (
   <div>
-    <div className="columns">
-      <div className="column"
-        style={{ divOne }}>
-        <div className="container is-fullhd">
-          <img src={require('./assets/motorbike.png')} alt='motorbike' />
+    <div className="container is-fullhd"
+      style={{height: '100vh'}}>
+      <div className="columns"
+        style={{height: '100vh'}}>
+        <div className="column"
+          style={{backgroundColor: '#ffffff00',
+            position: 'static',
+            height: '100%',
+            width: 'auto',
+            backgroundImage: `url(${MotorImg})`
+          }}>
+          <h1>This is the 1st Div</h1>
         </div>
-        <div className="container is-fullhd">
-          <img src={require('./assets/specking.jpg')}
-            style={{ width: '100%' }}
-            alt='public-specking' />
+        <div className="column"
+          style={{backgroundColor: '#0000008a',
+            position: 'absolute',
+            height: '100%',
+            width: '50%',
+            left: '50%'
+          }}>
+          <h2>This is the 2nd div</h2>
         </div>
-        <div className="container is-fullhd">
-          <img src={require('./assets/performing.jpg')}
-            style={{ width: '100%' }}
-            alt='performing' />
-        </div>
-      </div>
-      <div className="column"
-        style={{ divTwo }}>
-        div 2
       </div>
     </div>
-
+    <div className="container is-fullhd"
+      style={{height: '100vh'}}>
+      <div className="columns"
+        style={{height: '100vh'}}>
+        <div className="column"
+          style={{backgroundColor: '#ffffff00',
+            position: 'static',
+            height: '100%',
+            width: 'auto',
+            backgroundImage: `url(${SpeakerImg})`,
+            backgroundSize: 'cover'
+          }}>
+          <h1>This is the 3st Div</h1>
+        </div>
+        <div className="column"
+          style={{backgroundColor: '#0000008a',
+            position: 'absolute',
+            height: '100%',
+            width: '50%',
+            left: '50%'
+          }}>
+          <h2>This is the 4nd div</h2>
+        </div>
+      </div>
+    </div>
+    <div className="container is-fullhd"
+      style={{height: '100vh'}}>
+      <div className="columns"
+        style={{height: '100vh'}}>
+        <div className="column"
+          style={{backgroundColor: '#ffffff00',
+            position: 'static',
+            height: '100%',
+            width: 'auto',
+            backgroundImage: `url(${PerformImg})`,
+            backgroundSize: 'cover'
+          }}>
+          <h1>This is the 5st Div</h1>
+        </div>
+        {/* <div className="column"
+          style={{backgroundColor: '#0000008a',
+            position: 'absolute',
+            height: '100%',
+            width: '50%',
+            left: '50%'
+          }}>
+          <h2>This is the 6nd div</h2>
+        </div> */}
+      </div>
+    </div>
   </div>
 );
 export default Home;
