@@ -1,7 +1,15 @@
 import React from 'react';
 
+const styleFooter = {
+  position: 'fixed',
+  left: '0',
+  bottom: '0',
+  width: '100%',
+  padding: '1rem'
+};
+
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" style={styleFooter}>
     <div className="container">
       <div className="content has-text-centered">
         <p>
