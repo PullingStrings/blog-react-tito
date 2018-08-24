@@ -3,45 +3,29 @@ import React from 'react';
 // import SpeakerImg from './assets/specking.jpg';
 // import PerformImg from './assets/performing.jpg';
 
-const scroll = {
-  backgroundColor: '',
-  height: '100vh',
-  overflow: 'scroll',
-  backgroundImage: 'url(./assets/motorbike.png)',
-  backgroundSize: 'cover'
-};
-
-const colTwo = {
+const colOne = {
   position: 'absolute',
   top: '0rem',
   left: '50%',
-  backgroundColor: '#0000008c',
-  width: '50%',
+  backgroundColor: '#000000d6',
+  width: '53%',
   height: 'auto',
-  color: 'white',
-  textAlign: 'center'
+  color: 'white'
 };
 
-const colOne = {
-  position: 'absolute',
-  top: '0rem'
-};
 
 
 const Home = () => (
   <div>
     <div className="container is-fullhd">
-      <div style={scroll}>
+      <div className="image-scroll">
         <img src={require('./assets/motorbike.png')} alt="motorbike" />
         <img src={require('./assets/specking.jpg')} alt="specking" />
         <img src={require('./assets/performing.jpg')} alt="performing"/>
         <img src={require('./assets/laptop.jpg')} alt="sitting down" />
-        <div className="columns">
-          <div className="column" style={colOne}>
-            First column
-          </div>
-          <div className="column" style={colTwo}>
-            <p className="mbr-text testimonial-text mbr-fonts-style display-7">I’ve worked in the performing-arts sector over the years, from social media monitoring, coordinating live music events and curating visual art exhibitions in Southern and Eastern Africa mostly. Travelling between countries and continents, I often used my laptop to create personal sites for musicians and artists. To create these portfolios, I was using website builders. They were expensive to maintain and limited regarding the scale of creativity and customisation for myself and ultimately the client. This is why, I decided that I would like to build my own website from start to finish. Due to the limited resources and technologies back home in South Africa, I then moved to London and joined GA. I fully immersed myself in the web development community to unlock my potential in the digital sphere. After discovering the various paths in web development, I learn and admire the fact that you can work in teams as a developer (like joining a band again). Getting my feet wet in front-end development is where I would like to start my journey with the possibility to later on jump back into back-end development to become a well rounded full-stack developer.</p>
+        <div className="columns" style={colOne}>
+          <div className="column" >
+            <p className="mbr-text testimonial-text mbr-fonts-style display-7">I’ve worked in the performing-arts sector over the years, from social media monitoring, coordinating live music events and curating visual art exhibitions in Southern and Eastern Africa mostly.<br/><br/>Travelling between countries and continents, I often used my laptop to create personal sites for musicians and artists. To create these portfolios, I was using website builders.<br/><br/>They were expensive to maintain and limited regarding the scale of creativity and customisation for myself and ultimately the client. This is why, I decided that I would like to build my own website from start to finish.<br/><br/>Due to the limited resources and technologies back home in South Africa, I then moved to London and joined GA. I fully immersed myself in the web development community to unlock my potential in the digital sphere.<br/><br/>After discovering the various paths in web development, I learn and admire the fact that you can work in teams as a developer (like joining a band again). Getting my feet wet in front-end development is where I would like to start my journey with the possibility to later on jump back into back-end development to become a well rounded full-stack developer.<br/></p>
             <p className="mbr-author-name pt-4 mb-2 mbr-fonts-style display-7">Sibusiso Zwane.</p>
             <p className="mbr-author-desc mbr-fonts-style display-7">Web Developer<br/>
               <br/>

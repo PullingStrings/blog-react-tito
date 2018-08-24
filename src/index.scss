@@ -13,20 +13,34 @@ $colors: map-merge($colors, $addColors);
 
 @import 'bulma/bulma';
 
+html, body {
+  height: 100vh;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url(/../assets/motorbike.png);
-  /* Set a specific height */
-  min-height: 100px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  height: 200px;
+.backimage {
+    background-image: url('/assets/motorbike.png');
+    height: 100vh;
+}
+
+.image-scroll {
   overflow: scroll;
-  background-size: cover;
+    height: 45rem;
+    background-color: rgb(0, 0, 0);
+    img {
+      width: 100%;
+
+    }
+}
+
+
+.footer {
+  flex-shrink: 0;
 }
