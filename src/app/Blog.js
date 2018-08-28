@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import * as contentful from 'contentful';
 import BlogItem from './blog/BlogItem';
 import PageHeader from './components/PageHeader';
+import PageContent from './components/PageContent';
 
 class Blog extends React.Component {
 
@@ -27,7 +29,7 @@ class Blog extends React.Component {
       this.setState({
         posts: response.items
       });
-      console.log(response.items);
+      // console.log(response.items);
     }
 
     render() {
@@ -36,13 +38,21 @@ class Blog extends React.Component {
           <PageHeader color="is-info" title="Code Blog">
             Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
           </PageHeader>
-          <hr />
-          { this.state.posts.map(({fields}, i) =>
-            <BlogItem key={i} {...fields} />
-          )}
+          { this.props.blog.loading ? <div>Loading</div> :
+            <PageContent>
+              { this.props.blog.posts.map(({fields}, i) =>
+                <BlogItem key={i} {...fields} />
+              )}
+            </PageContent>
+          }
         </div>
       );
     }
 }
 
-export default Blog;
+function mapStateToProps(state) {
+  return {
+    blog: state.blog
+  };
+}
+export default connect(mapStateToProps)(Blog);
