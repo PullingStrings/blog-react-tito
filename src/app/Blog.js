@@ -54,6 +54,7 @@ class Blog extends React.Component {
 function mapStateToProps(state) {
   return {
     blog: state.blog
+
   };
 }
 export default connect(mapStateToProps)(Blog);
