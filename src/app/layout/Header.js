@@ -46,9 +46,11 @@ class Header extends React.Component {
               </span> */}
               Code Blog
             </NavLink>
-            <div className="navbar-item">
-                Work and projecs
-            </div>
+            <NavLink className="navbar-item"
+              to="/music"
+            >
+            Music
+            </NavLink>
             <div className="navbar-item">
                 Freelance
             </div>

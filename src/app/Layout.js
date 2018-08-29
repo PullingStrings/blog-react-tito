@@ -15,18 +15,21 @@ const Layout = ({ children }) => (
       title="Tito is Awesome"
       meta={[
         { name: 'description', content: 'Tito\'s personal wedsite, portfolio, blog, tutorials, and just cool $h!t' },
-        { name: 'keywords', content: 'resume, blog, porfolio, tutorials, tito zwane' }
+        { name: 'keywords', content: 'resume, blog, porfolio, tutorials, tito zwane' },
+        {name: 'mobile-web-app-capable', content: 'yes'},
+        {name: 'apple-mobile-web-app-capable', content: 'yes'}
       ]}
       script={[
         { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'}
       ]}
       link={[
-        {'rel': 'stylesheet', 'href': 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
+        {'rel': 'stylesheet', 'href': 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'},
+        {'rel': 'manifest', 'href': '../../manifest.json'}
       ]}
     />
     <Header />
     <Content>
-      {/* {children()} */}
+      {children}
       <Router />
     </Content>
     <Footer />
