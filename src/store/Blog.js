@@ -20,16 +20,16 @@ export function loadBlog() {
   };
 }
 
-export function loadMusic() {
-  return dispatch => {
-    dispatch(actions.musicLoading());
-    return client.getEntries()
-      .then(({items}) => {
-        dispatch(actions.loadMusicSuccess(items));
-      })
-      .catch(error => {
-        console.log(error);
-        dispatch(actions.musicLoading(false));
-      });
-  };
-}
+// export function loadMusic() {
+//   return dispatch => {
+//     dispatch(actions.musicLoading());
+//     return client.getEntries()
+//       .then(({items}) => {
+//         dispatch(actions.loadMusicSuccess(items));
+//       })
+//       .catch(error => {
+//         console.log(error);
+//         dispatch(actions.musicLoading(false));
+//       });
+//   };
+// }

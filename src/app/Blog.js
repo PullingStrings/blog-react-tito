@@ -5,39 +5,15 @@ import BlogItem from './blog/BlogItem';
 import PageHeader from './components/PageHeader';
 import PageContent from './components/PageContent';
 import { Loader } from './components/Loader';
+// import BlogPage from './components/BlogPage';
 
 class Blog extends React.Component {
-
-
-// //empty post array
-//   state = {
-//     posts: []
-//   }
-//
-//   //Contentful createClient object
-//   client = contentful.createClient({
-//     space: 'uvr4nfp7vhcj',
-//     accessToken: '0be2cbda51ce1f767bd978421c7f2c125bc211ca01a8093393d07098b16e7b1e' });
-//
-//   //call a fetchPosts function which will call a setPosts function
-//   componentDidMount() {
-//     this.fetchPosts()
-//       .then(this.setPosts);
-//   }
-//
-//   fetchPosts = () => this.client.getEntries()
-//     setPosts = response => {
-//       this.setState({
-//         posts: response.items
-//       });
-//       // console.log(response.items);
-//     }
 
   render() {
     return (
       <div>
-        <PageHeader color="is-info" title="Code Blog">
-          Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
+        <PageHeader title="Code Blog">
+          Your standard <strong>Blog</strong> one that talks about a range of shit some good some not so good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on React, JavaScript, and my <strong>and other things I am really intreasted in</strong>.
         </PageHeader>
         { this.props.blog.loading ? <Loader className='has-text-primary'>Loading</Loader> :
           <PageContent>

@@ -12,9 +12,11 @@ $addColors: (
 $colors: map-merge($colors, $addColors);
 
 @import 'bulma/bulma';
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 html, body {
   height: 100vh;
+
 }
 
 body {
@@ -22,7 +24,28 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Inconsolata', monospace;
+}
+
+nav {
+  font-size: 15px;
+  padding: 5px 10px;
+    .icon {
+      font-size: 20px;
+    }
+     .fa-twitter {
+      margin-left: 6px;
+    }
+}
+
+.box {
+  border-radius: 1px;
+  border: 1px #000 solid;
+  box-shadow: none;
+}
+
+.hero {
+  text-align: center;
 }
 
 .backimage {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PageHeader = (props) => (
-  <section className={`hero ${props.color}`}>
+  <section className="hero">
     <div className="hero-body">
       <div className="container">
         <h1 className="title">

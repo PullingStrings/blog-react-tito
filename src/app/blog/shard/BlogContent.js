@@ -3,7 +3,7 @@ import * as Markdown from 'react-markdown';
 
 
 const BlogContent = (props) => (
-  <article className="media">
+  <article className="media ">
     <div className="media-left">
       <figure className="image is-64x64">
         <img src={props.icon} alt="icon" />

@@ -4,7 +4,7 @@ import BlogContent from './shard/BlogContent';
 
 const BlogItem = (props) => (
   <div className="box">
-    <BlogContent limit={150} {...props}>
+    <BlogContent limit={50} {...props}>
       <BlogNav date={props.date} to={{
         pathname: `/blog/${props.path}`,
         state: { props }

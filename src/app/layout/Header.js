@@ -44,36 +44,22 @@ class Header extends React.Component {
               {/* <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                 <i className="fas fa-code"></i>
               </span> */}
-              Code Blog
+              Code...Music...Art...Life
             </NavLink>
-            <NavLink className="navbar-item"
-              to="/music"
-            >
-            Music
-            </NavLink>
-            <div className="navbar-item">
-                Freelance
-            </div>
-            <div className="navbar-item">
-                Experience
-            </div>
-            <div className="navbar-item">
-                Contact
-            </div>
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="https://github.com/pullingstrings">
+            <a className="navbar-item" href="https://github.com/PullingStrings">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
               </span>
             </a>
-            <a className="navbar-item" href="https://twitter.com/bassmental">
+            <a className="navbar-item" href="https://twitter.com/Realbassmental">
               <span className="icon has-text-info" style={{ color: '#0084FF' }}>
                 <i className="fab fa-lg fa-twitter"></i>
               </span>
             </a>
-            <a className="navbar-item" href="https://pullingstrings.github.io/sibusisozwane/">
-              <span className="icon" style={{ color: '#0077B5', marginLeft: 5 }}>
+            <a className="navbar-item" href="https://www.linkedin.com/in/titozwane/">
+              <span className="icon" style={{ color: '#0077B5' }}>
                 <i className="fab fa-lg fa-linkedin"></i>
               </span>
             </a>
