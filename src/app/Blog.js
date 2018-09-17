@@ -12,8 +12,8 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-        <PageHeader title="Code Blog">
-          Your standard <strong>Blog</strong> one that talks about a range of shit some good some not so good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on React, JavaScript, and my <strong>and other things I am really intreasted in</strong>.
+        <PageHeader title="Blog Low Down">
+          This is a fairly new <strong>Blog</strong> I dont have content yet but planning on pushing some through soon for now, I have very intereasting story about my travels.
         </PageHeader>
         { this.props.blog.loading ? <Loader className='has-text-primary'>Loading</Loader> :
           <PageContent>

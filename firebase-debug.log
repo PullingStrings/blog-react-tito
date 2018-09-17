@@ -1,0 +1,43 @@
+[debug] [2018-09-05T14:30:09.711Z] ----------------------------------------------------------------------
+[debug] [2018-09-05T14:30:09.715Z] Command:       /Users/ruthorbach/.nvm/versions/node/v10.7.0/bin/node /Users/ruthorbach/.nvm/versions/node/v10.7.0/bin/firebase serve
+[debug] [2018-09-05T14:30:09.715Z] CLI Version:   4.0.3
+[debug] [2018-09-05T14:30:09.715Z] Platform:      darwin
+[debug] [2018-09-05T14:30:09.715Z] Node Version:  v10.7.0
+[debug] [2018-09-05T14:30:09.736Z] Time:          Wed Sep 05 2018 15:30:09 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:09.737Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-05T14:30:09.769Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-05T14:30:09.769Z] > authorizing via signed-in user
+[debug] [2018-09-05T14:30:09.771Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-05T14:30:09.772Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/rOqj7poLMZgJBUNhvrmsroOVWYeJYNg3YLyWbX6cYKc',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Sep 05 2018 15:30:09 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:09.897Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-05T14:30:09.957Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/titos-blog-d8981  
+  
+ Wed Sep 05 2018 15:30:09 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:10.547Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-05T14:30:10.549Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/titos-blog-d8981/tokens  
+  
+ Wed Sep 05 2018 15:30:10 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:12.253Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-05T14:30:12.254Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/titos-blog-d8981  
+  
+ Wed Sep 05 2018 15:30:12 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:13.059Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ruthorbach/Documents/titozwane/blog-react-tito'...
+[info] 
+[debug] [2018-09-05T14:30:13.065Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/467657986598/clients/_:getWebAppConfig  
+  
+ Wed Sep 05 2018 15:30:13 GMT+0100 (British Summer Time)
+[debug] [2018-09-05T14:30:13.351Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: bloghome
+[info] ✔  hosting: Local server: http://localhost:5000
+
