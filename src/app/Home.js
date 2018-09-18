@@ -1,6 +1,6 @@
 import React from 'react';
 // import MotorImg from './assets/motorbike.png';
-import SpeakerImg from './assets/specking.jpg';
+// import SpeakerImg from './assets/specking.jpg';
 // import PerformImg from './assets/performing.jpg';
 import Typing from 'react-typing-animation';
 
