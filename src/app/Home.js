@@ -32,7 +32,9 @@ const Home = () => (
             <a href="https://github.com/PullingStrings" className="text-danger">https://github.com/PullingStrings</a><br/><a href="https://www.linkedin.com/in/titozwane/" className="text-secondary">https://www.linkedin.com/in/titozwane/</a><br/><a href="mailto:titozwane28@gmail.com" className="text-success">titozwane28@gmail.com</a></p>
         </div>
         <div className="column">
-          <img className="image" src={require('./assets/laptop.jpg')} alt="sitting down" />
+          <figure  className="image">
+            <img src={require('./assets/profile-picture-600x450.png')} alt="sitting down" />
+          </figure>
         </div>
       </div>
     </div>
