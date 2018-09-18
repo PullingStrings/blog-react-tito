@@ -4,11 +4,11 @@ import SpeakerImg from './assets/specking.jpg';
 // import PerformImg from './assets/performing.jpg';
 import Typing from 'react-typing-animation';
 
-const colOne = {
-  backgroundSize: 'cover',
-  height: '100%',
-  backgroundImage: `url(${SpeakerImg})`
-};
+// const colOne = {
+//   backgroundSize: 'cover',
+//   height: '100%',
+//   backgroundImage: `url(${SpeakerImg})`
+// };
 
 const headerType = {
   fontSize: '60px'
@@ -32,7 +32,7 @@ const Home = () => (
             <a href="https://github.com/PullingStrings" className="text-danger">https://github.com/PullingStrings</a><br/><a href="https://www.linkedin.com/in/titozwane/" className="text-secondary">https://www.linkedin.com/in/titozwane/</a><br/><a href="mailto:titozwane28@gmail.com" className="text-success">titozwane28@gmail.com</a></p>
         </div>
         <div className="column">
-          <img src={require('./assets/laptop.jpg')} alt="sitting down" />
+          <img className="image" src={require('./assets/laptop.jpg')} alt="sitting down" />
         </div>
       </div>
     </div>
